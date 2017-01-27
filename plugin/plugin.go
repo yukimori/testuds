@@ -2,6 +2,7 @@ package plugin
 
 import (
 	"github.com/yukimori/testuds"
+	"gopkg.in/sensorbee/sensorbee.v0/data"
 	"gopkg.in/sensorbee/sensorbee.v0/bql/udf"
 )
 

@@ -3,7 +3,6 @@ package testuds
 import (
 	"sync/atomic"
 	"gopkg.in/sensorbee/sensorbee.v0/core"
-	"gopkg.in/sensorbee/sensorbee.v0/data"
 )
 
 type Counter struct {
