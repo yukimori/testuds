@@ -14,7 +14,7 @@ type CounterCreator struct {
 }
 
 func (c *CounterCreator) CreateState(ctx *core.Context, params data.Map) (core.SharedState, error) {
-	cnt := &testuds.Counter{}
+	cnt := &Counter{}
 	if v, ok := params["start"]; ok {
 		i, err := data.ToInt(v)
 		if err != nil {
