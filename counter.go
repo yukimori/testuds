@@ -1,6 +1,7 @@
 package testuds
 
 import (
+	"sync/atomic"
 	"gopkg.in/sensorbee/sensorbee.v0/core"
 	"gopkg.in/sensorbee/sensorbee.v0/data"
 )
@@ -12,7 +13,7 @@ type Counter struct {
 type CounterCreator struct {
 }
 
-func (c *CounterCreator) CreateState(ctx *core.Context, params data.Map) (core.SharedState, rror) {
+func (c *CounterCreator) CreateState(ctx *core.Context, params data.Map) (core.SharedState, error) {
 	cnt := &Counter{}
 	if v, ok := params["start"]; ok {
 		i, err := data.ToInt(v)
