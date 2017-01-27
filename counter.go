@@ -1,5 +1,10 @@
 package testuds
 
+import (
+	"gopkg.in/sensorbee/sensorbee.v0/core"
+	"gopkg.in/sensorbee/sensorbee.v0/data"
+)
+
 type Counter struct {
 	c int64
 }
